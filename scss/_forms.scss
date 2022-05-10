@@ -1,0 +1,87 @@
+/* forms */
+.error {
+    color: var(--red) !important;
+    border-color: var(--red) !important;
+}
+.success {
+    color: var(--green) !important;
+    border-color: var(--green) !important;
+}
+.disabled {
+    opacity: 0.3 !important;
+    color: var(--gray) !important;
+    border-color: var(--gray) !important;
+    cursor: default !important;
+}
+input.input-text,
+textarea.textarea,
+select.select {
+    width: 100%;
+    border-radius: 0;
+    transition: color $d $f, background-color $d $f, border-color $d $f;
+    will-change: color, background-color, border-color;
+}
+textarea.textarea {
+    resize: none;
+    font-family: var(--font-family);
+    overflow: auto;
+    height: auto;
+}
+select.select {
+    appearance: none;
+    border-radius: 0;
+    &::-ms-expand {
+        display: none;
+    }
+}
+.checkbox,
+.radio {
+    display: block;
+    input {
+        display: none;
+        &:checked+label {}
+        &:disabled+label {
+            opacity: 0.3;
+        }
+    }
+    label {
+        user-select: none;
+    }
+}
+a.button,
+input.button,
+button.button {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.3rem 2.4rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: normal;
+    font-weight: 500;
+    color: var(--white);
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    border-radius: 0.4rem;
+    transition: color $d $f, background-color $d $f, border-color $d $f;
+    will-change: color, background-color, border-color;
+    &-outline {
+        color: var(--primary);
+        background: var(--white);
+        &:hover {
+            color: var(--white);
+            background-color: var(--primary);
+        }
+    }
+}
+.drop {
+    &.open {
+        .drop-panel {
+            display: block;
+        }
+    }
+}
+.drop-panel {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
