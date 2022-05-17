@@ -1,0 +1,26 @@
+<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="24.8941" cy="25.6992" rx="24.5098" ry="25" fill="#EB6709"/>
+<ellipse cx="24.8941" cy="25.6992" rx="24.5098" ry="25" fill="white" fill-opacity="0.5"/>
+<mask id="mask0_3139_29666" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="51">
+<ellipse cx="24.8941" cy="25.6992" rx="24.5098" ry="25" fill="#D8D8F8"/>
+</mask>
+<g mask="url(#mask0_3139_29666)">
+<rect x="15.0898" y="15.8662" width="39.8693" height="44.8333" fill="#7F74EB"/>
+</g>
+<mask id="mask1_3139_29666" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="18" width="35" height="33">
+<mask id="mask2_3139_29666" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="50" height="51">
+<ellipse cx="24.8941" cy="25.6992" rx="24.5098" ry="25" fill="#D8D8F8"/>
+</mask>
+<g mask="url(#mask2_3139_29666)">
+<rect x="15.0898" y="18.1992" width="39.8693" height="44.8333" fill="#7F74EB"/>
+</g>
+</mask>
+<g mask="url(#mask1_3139_29666)">
+<rect x="10.6787" y="15.6992" width="29.4118" height="13.3333" rx="6.66667" fill="#695FC8"/>
+</g>
+<rect x="10.1885" y="9.03223" width="29.4118" height="16.6667" rx="8.33333" fill="#3A3379"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.2884 14.2665C28.5755 13.9737 29.0411 13.9737 29.3282 14.2665C29.6154 14.5594 29.6154 15.0343 29.3282 15.3272L24.5463 20.2047C24.5148 20.2606 24.4756 20.3133 24.4287 20.3611C24.1416 20.654 23.676 20.654 23.3888 20.3611L20.3848 17.2969C20.0976 17.004 20.0976 16.5292 20.3848 16.2363C20.6719 15.9434 21.1375 15.9434 21.4247 16.2363L23.891 18.7519L28.2884 14.2665Z" fill="white"/>
+<rect x="26.5283" y="34.0322" width="13.0719" height="1.66667" rx="0.833333" fill="white"/>
+<path d="M45.9728 39.0322H27.3617C26.9014 39.0322 26.5283 39.4053 26.5283 39.8656C26.5283 40.3258 26.9014 40.6989 27.3617 40.6989H42.7768C44.0525 40.6989 45.2843 40.1062 45.9728 39.0322Z" fill="white" fill-opacity="0.5"/>
+<path d="M50.3845 19.6992H43.7015C43.2413 19.6992 42.8682 20.0723 42.8682 20.5326C42.8682 20.9928 43.2413 21.3659 43.7015 21.3659H48.2085C49.2285 21.3659 50.1392 20.6893 50.3845 19.6992Z" fill="white" fill-opacity="0.5"/>
+</svg>

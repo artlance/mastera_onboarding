@@ -14,22 +14,49 @@
     cursor: default !important;
 }
 input.input-text,
-textarea.textarea,
-select.select {
+textarea.textarea {
+    display: block;
     width: 100%;
-    border-radius: 0;
-    transition: color $d $f, background-color $d $f, border-color $d $f;
-    will-change: color, background-color, border-color;
+    height: 4.4rem;
+    padding: 0 1.1rem;
+    font-size: 1.6rem;
+    line-height: normal;
+    color: var(--text);
+    border: 1px solid var(--gray);
+    border-radius: 0.4rem;
+    background: var(--white);
+    transition: color $d $f, box-shadow $d $f, border-color $d $f;
+    will-change: color, box-shadow, border-color;
+    &::placeholder {
+        color: var(--gray);
+    }
+    &:focus {
+        border-color: var(--focus);
+        box-shadow: 0 0 0 2px var(--secondary);
+    }
 }
 textarea.textarea {
     resize: none;
-    font-family: var(--font-family);
     overflow: auto;
-    height: auto;
+    height: 14.2rem;
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    line-height: 1.334;
+    border-radius: var(--radius);
 }
 select.select {
+    display: block;
+    width: 100%;
+    height: 4.4rem;
+    padding: 0 2.7rem 0 1.1rem;
+    font-size: 1.6rem;
+    line-height: normal;
+    color: var(--text);
+    border: 1px solid var(--gray);
+    border-radius: 0.4rem;
+    background: var(--white) url('../images/select.svg') 100% 50% no-repeat;
+    background-size: 2.7rem 4.2rem;
     appearance: none;
-    border-radius: 0;
     &::-ms-expand {
         display: none;
     }
@@ -38,14 +65,55 @@ select.select {
 .radio {
     display: block;
     input {
-        display: none;
-        &:checked+label {}
+        position: absolute;
+        left: -9999px;
+        visibility: hidden;
+        &:checked+label {
+            &::before {
+                border-color: var(--secondary);
+            }
+            &::after {
+                opacity: 1;
+            }
+        }
         &:disabled+label {
             opacity: 0.3;
+            pointer-events: none;
         }
     }
     label {
+        cursor: pointer;
+        display: block;
+        margin: 0;
+        font-size: 1.4rem;
+        line-height: 1.43;
+        padding: 0 0 0 3.2rem;
+        position: relative;
         user-select: none;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0.1rem;
+            top: 0.1rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            border: 2px solid #8C9196;
+            background: var(--white);
+            border-radius: 50%;
+            transition: border-color $d $f;
+        }
+        &::after {
+            opacity: 0;
+            content: "";
+            position: absolute;
+            left: 0.5rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background: var(--secondary);
+            border-radius: 50%;
+            transition: opacity $d $f;
+        }
     }
 }
 a.button,
@@ -84,4 +152,123 @@ button.button {
     display: none;
     position: absolute;
     z-index: 1000;
+}
+.ui-sortable-handle {
+    -ms-touch-action: none;
+    touch-action: none;
+}
+body>.ui-widget {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+.ui-datepicker-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+.ui-datepicker-title {
+    order: -1;
+    flex-grow: 1;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0 0.4rem;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-left: 0.2rem;
+    background: #F1F1F1;
+    border-radius: 0.6rem;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0.9rem;
+        top: 0.7rem;
+        width: 0;
+        height: 0;
+        border: 0.45rem solid transparent;
+        border-left-width: 0.6rem;
+        border-right-width: 0.6rem;
+        border-left-color: var(--gray-dark);
+        transition: border-color $d $f;
+        will-change: border-color;
+    }
+    &:hover {
+        &::after {
+            border-left-color: var(--secondary);
+        }
+    }
+}
+.ui-datepicker-prev {
+    &::after {
+        left: 0.2rem;
+        border-left-color: transparent;
+        border-right-color: var(--gray-dark);
+    }
+    &:hover {
+        &::after {
+            border-left-color: transparent;
+            border-right-color: var(--secondary);
+        }
+    }
+}
+.ui-datepicker {
+    max-width: 28rem;
+    padding: 1rem;
+    background: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+}
+.ui-datepicker-inline {
+    margin-bottom: 1.2rem;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+.ui-datepicker-calendar {
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0;
+    thead {
+        th {
+            padding: 0 0 0.8rem;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: var(--text);
+        }
+    }
+    td {
+        padding: 0 0 0.4rem;
+        a {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 2;
+            color: var(--text);
+            margin: 0 auto;
+            border-radius: 0.4rem;
+            &.ui-priority-secondary {
+                background: transparent;
+                color: var(--gray);
+            }
+            &.ui-state-active {
+                font-weight: bold;
+                color: var(--secondary);
+                background: rgba(#6DD230, 0.15);
+            }
+            &:hover {
+                color: var(--secondary);
+            }
+        }
+    }
 }

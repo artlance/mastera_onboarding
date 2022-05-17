@@ -14,8 +14,21 @@
             max-width: 100%;
         }
     }
+    &-v2 {
+        .header-content {
+            height: 10.7rem;
+        }
+        .header-left,
+        .header-right {
+            flex: 1 1 0;
+            max-width: 100%;
+        }
+    }
     &-push {
         height: 8rem;
+    }
+    &-push-v2 {
+        height: 10.8rem;
     }
     &-content {
         display: flex;
@@ -56,6 +69,23 @@
         font-weight: bold;
         font-family: var(--font-title);
         padding-right: 1rem;
+    }
+    &-back {
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+        svg {
+            display: block;
+            margin: 0;
+            path {
+                transition: fill $d $f;
+            }
+        }
+        &:hover {
+            svg path {
+                fill: var(--primary);
+            }
+        }
     }
     &-info {
         flex: 0 0 2.8rem;
@@ -178,9 +208,132 @@
             stroke-dasharray: 0 82;
         }
     }
+    &-center {
+        flex: 0 0 52.471%;
+        max-width: 52.471%;
+    }
+    &-steps {
+        display: flex;
+        justify-content: center;
+        &-mobile {
+            display: none;
+        }
+    }
+    &-step {
+        flex: 1 1 0;
+        max-width: 100%;
+        position: relative;
+        &:first-child {
+            &::before {
+                left: 50%;
+            }
+        }
+        &:last-child {
+            &::before {
+                right: 50%;
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 1.5rem;
+            height: 2px;
+            background: var(--primary);
+        }
+        &.inactive {
+            &::before {
+                background: #FFD8BE;
+            }
+            .header-step-number {
+                background: #FFD8BE;
+            }
+            .header-step-title {
+                color: var(--gray);
+            }
+        }
+        &-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto 0.4rem;
+            width: 3.2rem;
+            height: 3.1rem;
+            color: var(--white);
+            background: var(--primary);
+            border-radius: 50%;
+            position: relative;
+        }
+        &-title {
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+}
+@media (max-width: 1199.98px) {
+    .header {
+        &-v2 {
+            .header-left,
+            .header-right {
+                flex: 0 1 auto;
+            }
+        }
+        &-center {
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+        &-step {
+            &-title {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .header {
+        &-v2 {
+            .header-content {
+                height: 7.9rem;
+            }
+        }
+        &-push-v2 {
+            height: 8rem;
+        }
+        &-center {
+            flex: 0 0 68%;
+            max-width: 68%;
+        }
+        &-step {
+            &::before {
+                top: 1.3rem;
+            }
+            &-number {
+                width: 2.8rem;
+                height: 2.8rem;
+                font-size: 1.4rem;
+            }
+            &-title {
+                font-size: 1.2rem;
+            }
+        }
+    }
 }
 @media (max-width: 767.98px) {
     .header {
+        &-v2 {
+            .header-content {
+                height: 5.9rem;
+            }
+            .header-left,
+            .header-right {
+                flex-grow: 1;
+            }
+        }
+        &-push-v2 {
+            height: 6rem;
+        }
         &-push {
             height: 6rem;
         }
@@ -188,8 +341,8 @@
             height: 5.9rem;
         }
         &-title {
-            font-size: 1.6rem;
-            line-height: 1.25;
+            font-size: 1.5rem;
+            line-height: 1.334;
         }
         &-info {
             margin-right: var(--gap);
@@ -214,6 +367,26 @@
         &-progress {
             margin-right: var(--gap);
             margin-left: 0;
+        }
+        &-center {
+            flex: 0 1 auto;
+            max-width: 100%;
+        }
+        &-steps {
+            display: none;
+            &-mobile {
+                display: flex;
+                justify-content: center;
+                padding-top: 2.4rem;
+            }
+        }
+        &-step {
+            &-title {
+                font-size: 1.1rem;
+                line-height: 1.364;
+                white-space: normal;
+                padding: 0 0.3rem;
+            }
         }
     }
 }

@@ -40,12 +40,30 @@ $(document).ready(function () {
         $(this).parent('.drop').toggleClass('open');
     });
 
-    //-----------------------------------------//
+    //------------------------------------------------------------------------//
 
     //done panel toggle
     $(document).on('click', '.done-panel-toggle', function (event) {
         event.preventDefault();
         $('.done-panel, .done-panel-push').fadeIn(300);
+    });
+
+    //------------------------------------------------------------------------//
+
+    //datepicker
+    $('.mask-date').mask('99/99/9999', { placeholder: 'mm/dd/yyyy' });
+    $('.datepicker').datepicker({
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        dateFormat: "mm/dd/yy",
+    });
+
+    //------------------------------------------------------------------------//
+
+    //toggle active
+    $(document).on('click', '.toggle-active li:not(.active)', function (event) {
+        event.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
     });
 
     //------------------------------------------------------------------------//
