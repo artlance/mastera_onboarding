@@ -39,6 +39,8 @@ textarea.textarea {
     resize: none;
     overflow: auto;
     height: 14.2rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
     font-family: var(--font-family);
     font-size: 1.2rem;
     line-height: 1.334;
@@ -152,6 +154,12 @@ button.button {
     display: none;
     position: absolute;
     z-index: 1000;
+}
+.box {
+    display: none;
+    &.visible {
+        display: block;
+    }
 }
 .ui-sortable-handle {
     -ms-touch-action: none;
@@ -270,5 +278,196 @@ body>.ui-widget {
                 color: var(--secondary);
             }
         }
+    }
+}
+.emotions {
+    position: relative;
+    &-toggle {
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        svg {
+            display: block;
+            margin: 0 auto;
+            path {
+                transition: fill $d $f;
+            }
+        }
+        &:hover {
+            svg path {
+                fill: rgba(#F3BB1C, 0.8);
+            }
+        }
+    }
+    &-panel {
+        left: 0;
+        top: 100%;
+        margin-top: 0.7rem;
+        width: 28.2rem;
+        padding: 0.5rem;
+        background: var(--white);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        max-height: 13.6rem;
+        overflow: auto;
+        li {
+            button {
+                display: block;
+                margin: 0;
+                padding: 0.5rem;
+                font-size: 2.4rem;
+                line-height: 1;
+                text-align: center;
+                border: 0;
+                background: transparent;
+                border-radius: 0.4rem;
+                transition: background-color $d $f;
+                &:hover {
+                    background-color: rgba(#EB6709, 0.1);
+                }
+            }
+        }
+    }
+}
+.multi-select-menuitem {
+    display: block;
+    margin: 0;
+    padding: 0.4rem 0;
+    input {
+        position: absolute;
+        left: -9999px;
+        visibility: hidden;
+        &:checked+.label-span {
+            color: var(--black);
+            &::before {
+                background-color: var(--secondary);
+                border-color: var(--secondary);
+            }
+        }
+        &:disabled+.label-span {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+    }
+    .label-span {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0;
+        padding-left: 3rem;
+        color: var(--gray);
+        user-select: none;
+        transition: color $d $f;
+        will-change: color;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -0.9rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            border: 2px solid var(--gray);
+            background: var(--white) url("../images/checkbox.svg") 50% 50% no-repeat;
+            background-size: 1.3rem 0.9rem;
+            border-radius: 0.4rem;
+            transition: background-color $d $f, border-color $d $f;
+            will-change: background-color, border-color;
+        }
+        img {
+            width: 3rem;
+            margin-right: 0.8rem;
+            border-radius: 50%;
+        }
+    }
+}
+.multi-select-menuitem--titled:before {
+    display: block;
+    font-weight: bold;
+    content: attr(data-group-title);
+    margin: 0 0 0.5rem;
+}
+.multi-select-menuitem--titledsr:before {
+    display: block;
+    font-weight: bold;
+    content: attr(data-group-title);
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.multi-select-container {
+    display: block;
+    position: relative;
+}
+.multi-select-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    margin-top: -1px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 20.2rem !important;
+    overflow: auto !important;
+    padding: 0.7rem 1.1rem;
+    border: 1px solid var(--gray);
+    background: var(--white);
+    border-radius: 0.4rem;
+    box-shadow: var(--shadow);
+}
+.multi-select-presets {
+    border-bottom: 1px solid var(--gray);
+}
+.multi-select-button {
+    cursor: default;
+    display: block;
+    width: 100%;
+    height: 4.4rem;
+    padding: 0.6rem 2.7rem 0.6rem 1.1rem;
+    font-size: 1.6rem;
+    line-height: 1.875;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid var(--gray);
+    border-radius: 0.4rem;
+    background: var(--white) url('../images/select.svg') 100% 50% no-repeat;
+    background-size: 2.7rem 4.2rem;
+    img {
+        display: inline-block;
+        vertical-align: top;
+        width: 3rem;
+        margin-right: 0.4rem;
+        border-radius: 50%;
+    }
+}
+.multi-select-container--open .multi-select-menu {
+    display: block;
+}
+.multi-select-container--positioned .multi-select-menu {
+    box-sizing: border-box;
+}
+.multi-select-container--positioned .multi-select-menu label {
+    white-space: normal;
+}
+@media (max-width: 767.98px) {
+    .multi-select-menu {
+        max-height: 15.8rem !important;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
     }
 }
