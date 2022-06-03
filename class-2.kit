@@ -1,0 +1,333 @@
+<!-- $page-title = Mastera Onboarding -->
+<!-- @import "parts/_head.kit" -->
+    <main class="main-site">
+        <header class="header-site header-v2">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <a href="class-1.html" class="header-back"><!-- @import "images/back.svg" --></a>
+                    </div>
+                    <div class="header-center">
+                        <div class="header-steps">
+                            <div class="header-step">
+                                <div class="header-step-number">1</div>
+                                <div class="header-step-title">Set up new class</div>
+                            </div>
+                            <div class="header-step">
+                                <div class="header-step-number">2</div>
+                                <div class="header-step-title">Set up class schedule</div>
+                            </div>
+                            <div class="header-step inactive">
+                                <div class="header-step-number">3</div>
+                                <div class="header-step-title">Upload Promotional Content</div>
+                            </div>
+                        </div>
+                        <!-- /.header-steps -->
+                    </div>
+                    <div class="header-right">
+                        <div class="header-info drop">
+                            <a href="#" class="header-info-toggle drop-toggle"><!-- @import "images/info.svg" --></a>
+                            <div class="header-info-panel drop-panel">
+                                <div class="header-info-content">
+                                    <div class="header-info-video">
+                                        <a href="#" class="header-info-video-link"><img src="upload/poster.jpg" alt=""></a>
+                                    </div>
+                                    <div class="header-info-text">Need extra help? watch our video tutorial or visit <a href="#">Learning Center</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.header-info -->
+                        <div class="header-progress">
+                            <div class="header-progress-icon">
+                                <svg width="30" height="30" class="header-progress-chart">
+                                    <circle r="13" cx="15" cy="15" class="header-progress-pie" style="stroke-dasharray: calc(5*0.82) 82;" />
+                                </svg>
+                            </div>
+                            <div class="header-progress-text">5%</div>
+                        </div>
+                        <a href="#" class="header-close"><!-- @import "images/close.svg" --></a>
+                    </div>
+                </div>
+                <!-- /.header-content -->
+            </div>
+            <!-- /.container -->
+        </header>
+        <div class="header-push-v2"></div>
+        <div class="content-site content-gray">
+            <div class="container">
+                <div class="header-steps-mobile">
+                    <div class="header-step">
+                        <div class="header-step-number">1</div>
+                        <div class="header-step-title">Set up new class</div>
+                    </div>
+                    <div class="header-step">
+                        <div class="header-step-number">2</div>
+                        <div class="header-step-title">Set up class schedule</div>
+                    </div>
+                    <div class="header-step inactive">
+                        <div class="header-step-number">3</div>
+                        <div class="header-step-title">Upload Promotional Content</div>
+                    </div>
+                </div>
+                <!-- /.header-steps-mobile -->
+                <div class="content-form">
+                    <div class="content-form-caption">Create and set your class schedule</div>
+                    <div class="class">
+                        <div class="content-form-info">
+                            <div class="content-form-info-title">Set up class schedule</div>
+                            <div class="content-form-info-text">Set the day, time, teacher, and capacity for your class. If it’s offered virtually, be sure to include the zoom or custom link for your students to join.</div>
+                        </div>
+                        <!-- /.content-form-info -->
+                        <div class="class-content">
+                            <div class="class-schedule">
+                                <div class="class-schedule-row">
+                                    <div class="class-schedule-col">
+                                        <label for="class-day" class="content-form-label">Day</label>
+                                        <select class="select" name="class-day" id="class-day">
+                                            <option value="Monday">Monday</option>
+                                        </select>
+                                    </div>
+                                    <!-- /.class-schedule-col -->
+                                    <div class="class-schedule-col">
+                                        <label for="class-start" class="content-form-label">Start</label>
+                                        <div class="content-form-time">
+                                            <label for="class-start" class="content-form-time-label"><!-- @import "images/time.svg" --></label>
+                                            <input type="text" class="input-text mask-time" id="class-start" placeholder="00:00 am" value="09:00 am">
+                                        </div>
+                                    </div>
+                                    <!-- /.class-schedule-col -->
+                                    <div class="class-schedule-col">
+                                        <label for="class-end" class="content-form-label">End</label>
+                                        <div class="content-form-time">
+                                            <label for="class-end" class="content-form-time-label"><!-- @import "images/time.svg" --></label>
+                                            <input type="text" class="input-text mask-time" id="class-end" placeholder="00:00 am" value="10:00 am">
+                                        </div>
+                                    </div>
+                                    <!-- /.class-schedule-col -->
+                                    <div class="class-schedule-col">
+                                        <label class="content-form-label">Teacher</label>
+                                        <select class="multi-select" multiple>
+                                            <option selected value="Chris" data-html="<img src='upload/person-1.jpg'> Chris">Chris</option>
+                                            <option value="Alexa" data-html="<img src='upload/person-2.jpg'> Alexa">Alexa</option>
+                                            <option value="Steve" data-html="<img src='upload/person-3.jpg'> Steve">Steve</option>
+                                            <option value="Chris" data-html="<img src='upload/person-1.jpg'> Chris">Chris</option>
+                                            <option value="Alexa" data-html="<img src='upload/person-2.jpg'> Alexa">Alexa</option>
+                                            <option value="Steve" data-html="<img src='upload/person-3.jpg'> Steve">Steve</option>
+                                        </select>
+                                    </div>
+                                    <!-- /.class-schedule-col -->
+                                    <div class="class-schedule-col">
+                                        <label for="class-capacity" class="content-form-label">Capacity</label>
+                                        <input type="text" class="input-text" id="class-capacity" value="15">
+                                    </div>
+                                    <!-- /.class-schedule-col -->
+                                </div>
+                                <!-- /.class-schedule-row -->
+                                <div class="class-schedule-row">
+                                    <div class="class-schedule-col class-schedule-col-sm">
+                                        <label for="class-type" class="content-form-label">Type</label>
+                                        <select class="select" name="class-type" id="class-type">
+                                            <option value="Zoom">Zoom</option>
+                                        </select>
+                                    </div>
+                                    <!-- /.class-schedule-col -->
+                                    <div class="class-schedule-col class-schedule-col-lg">
+                                        <label for="class-link" class="content-form-label">Link</label>
+                                        <input type="text" class="input-text" id="class-link" value="https://zoom.com">
+                                    </div>
+                                    <!-- /.class-schedule-col -->
+                                </div>
+                                <!-- /.class-schedule-row -->
+                                <div class="class-schedule-cta">
+                                    <a href="#" class="button button-dark">Add a Slot</a>
+                                </div>
+                            </div>
+                            <!-- /.class-schedule -->
+                            <div class="class-list">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="col-1">Day/Date</th>
+                                            <th class="col-2">Start</th>
+                                            <th class="col-3">End</th>
+                                            <th class="col-4">Teacher</th>
+                                            <th class="col-5">Type</th>
+                                            <th class="col-6">Link</th>
+                                            <th class="col-7"></th>
+                                            <th class="col-8"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="class-suptitle">Day/Date</div>
+                                                Sunday
+                                            </td>
+                                            <td class="col-2">
+                                                <div class="class-suptitle">Start</div>
+                                                08:00 am
+                                            </td>
+                                            <td class="col-3">
+                                                <div class="class-suptitle">End</div>
+                                                09:00 am
+                                            </td>
+                                            <td class="col-4">
+                                                <div class="class-suptitle">Teacher</div>
+                                                <div class="class-teacher"><img src="upload/person-1.jpg" alt="">Christian</div>
+                                            </td>
+                                            <td class="col-5">
+                                                <div class="class-suptitle">Type</div>
+                                                Zoom
+                                            </td>
+                                            <td class="col-6">
+                                                <div class="class-suptitle">Link</div>
+                                                <a href="#" class="class-link">https://zoom.com/uygd67</a>
+                                            </td>
+                                            <td class="col-7">
+                                                <a href="#" class="class-edit"><!-- @import "images/edit.svg" --></a>
+                                            </td>
+                                            <td class="col-8">
+                                                <a href="#" class="class-delete"><!-- @import "images/delete-2.svg" --></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="class-suptitle">Day/Date</div>
+                                                Sunday
+                                            </td>
+                                            <td class="col-2">
+                                                <div class="class-suptitle">Start</div>
+                                                08:00 am
+                                            </td>
+                                            <td class="col-3">
+                                                <div class="class-suptitle">End</div>
+                                                09:00 am
+                                            </td>
+                                            <td class="col-4">
+                                                <div class="class-suptitle">Teacher</div>
+                                                <div class="class-teacher"><img src="upload/person-1.jpg" alt="">Christian</div>
+                                            </td>
+                                            <td class="col-5">
+                                                <div class="class-suptitle">Type</div>
+                                                Zoom
+                                            </td>
+                                            <td class="col-6">
+                                                <div class="class-suptitle">Link</div>
+                                                <a href="#" class="class-link">https://zoom.com/uygd67</a>
+                                            </td>
+                                            <td class="col-7">
+                                                <a href="#" class="class-edit"><!-- @import "images/edit.svg" --></a>
+                                            </td>
+                                            <td class="col-8">
+                                                <a href="#" class="class-delete"><!-- @import "images/delete-2.svg" --></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="class-suptitle">Day/Date</div>
+                                                Sunday
+                                            </td>
+                                            <td class="col-2">
+                                                <div class="class-suptitle">Start</div>
+                                                08:00 am
+                                            </td>
+                                            <td class="col-3">
+                                                <div class="class-suptitle">End</div>
+                                                09:00 am
+                                            </td>
+                                            <td class="col-4">
+                                                <div class="class-suptitle">Teacher</div>
+                                                <div class="class-teacher"><img src="upload/person-1.jpg" alt="">Christian</div>
+                                            </td>
+                                            <td class="col-5">
+                                                <div class="class-suptitle">Type</div>
+                                                Zoom
+                                            </td>
+                                            <td class="col-6">
+                                                <div class="class-suptitle">Link</div>
+                                                <a href="#" class="class-link">https://zoom.com/uygd67</a>
+                                            </td>
+                                            <td class="col-7">
+                                                <a href="#" class="class-edit"><!-- @import "images/edit.svg" --></a>
+                                            </td>
+                                            <td class="col-8">
+                                                <a href="#" class="class-delete"><!-- @import "images/delete-2.svg" --></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-1">
+                                                <div class="class-suptitle">Day/Date</div>
+                                                Sunday
+                                            </td>
+                                            <td class="col-2">
+                                                <div class="class-suptitle">Start</div>
+                                                08:00 am
+                                            </td>
+                                            <td class="col-3">
+                                                <div class="class-suptitle">End</div>
+                                                09:00 am
+                                            </td>
+                                            <td class="col-4">
+                                                <div class="class-suptitle">Teacher</div>
+                                                <div class="class-teacher"><img src="upload/person-1.jpg" alt="">Christian</div>
+                                            </td>
+                                            <td class="col-5">
+                                                <div class="class-suptitle">Type</div>
+                                                Zoom
+                                            </td>
+                                            <td class="col-6">
+                                                <div class="class-suptitle">Link</div>
+                                                <a href="#" class="class-link">https://zoom.com/uygd67</a>
+                                            </td>
+                                            <td class="col-7">
+                                                <a href="#" class="class-edit"><!-- @import "images/edit.svg" --></a>
+                                            </td>
+                                            <td class="col-8">
+                                                <a href="#" class="class-delete"><!-- @import "images/delete-2.svg" --></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.class-list -->
+                            <div class="content-form-cta">
+                                <a href="class-3.html" class="button">Next</a>
+                            </div>
+                        </div>
+                        <!-- /.class-content -->
+                    </div>
+                    <!-- /.class -->
+                </div>
+                <!-- /.content-form -->
+                <div class="steps-panel-push"></div>
+                <div class="steps-panel">
+                    <div class="steps-panel-item current">
+                        <div class="steps-panel-content">
+                            <div class="steps-panel-title">Add content</div>
+                            <div class="steps-panel-status">1 / 2 Completed</div>
+                        </div>
+                    </div>
+                    <!-- /.steps-panel-item -->
+                    <div class="steps-panel-item">
+                        <div class="steps-panel-content">
+                            <div class="steps-panel-title">Customize your site</div>
+                            <div class="steps-panel-status">0 / 3 Completed</div>
+                        </div>
+                    </div>
+                    <!-- /.steps-panel-item -->
+                    <div class="steps-panel-item">
+                        <div class="steps-panel-content">
+                            <div class="steps-panel-title">Package &amp; sell</div>
+                            <div class="steps-panel-status">0 / 4 Completed</div>
+                        </div>
+                    </div>
+                    <!-- /.steps-panel-item -->
+                </div>
+                <!-- /.steps-panel -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-site -->
+    </main>
+    <!-- /.main-site -->
+<!-- @import "parts/_foot.kit" -->

@@ -1,0 +1,242 @@
+<!-- $page-title = Mastera Onboarding -->
+<!-- @import "parts/_head.kit" -->
+    <main class="main-site">
+        <header class="header-site header-v2">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <a href="program-2.html" class="header-back"><!-- @import "images/back.svg" --></a>
+                    </div>
+                    <div class="header-center">
+                        <div class="header-steps">
+                            <div class="header-step">
+                                <div class="header-step-number">1</div>
+                                <div class="header-step-title">Set up new program</div>
+                            </div>
+                            <div class="header-step">
+                                <div class="header-step-number">2</div>
+                                <div class="header-step-title">Add lessons</div>
+                            </div>
+                            <div class="header-step">
+                                <div class="header-step-number">3</div>
+                                <div class="header-step-title">Upload promotional content</div>
+                            </div>
+                        </div>
+                        <!-- /.header-steps -->
+                    </div>
+                    <div class="header-right">
+                        <div class="header-info drop">
+                            <a href="#" class="header-info-toggle drop-toggle"><!-- @import "images/info.svg" --></a>
+                            <div class="header-info-panel drop-panel">
+                                <div class="header-info-content">
+                                    <div class="header-info-video">
+                                        <a href="#" class="header-info-video-link"><img src="upload/poster.jpg" alt=""></a>
+                                    </div>
+                                    <div class="header-info-text">Need extra help? watch our video tutorial or visit <a href="#">Learning Center</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.header-info -->
+                        <div class="header-progress">
+                            <div class="header-progress-icon">
+                                <svg width="30" height="30" class="header-progress-chart">
+                                    <circle r="13" cx="15" cy="15" class="header-progress-pie" style="stroke-dasharray: calc(5*0.82) 82;" />
+                                </svg>
+                            </div>
+                            <div class="header-progress-text">5%</div>
+                        </div>
+                        <a href="#" class="header-close"><!-- @import "images/close.svg" --></a>
+                    </div>
+                </div>
+                <!-- /.header-content -->
+            </div>
+            <!-- /.container -->
+        </header>
+        <div class="header-push-v2"></div>
+        <div class="content-site content-gray">
+            <div class="container">
+                <div class="header-steps-mobile">
+                    <div class="header-step">
+                        <div class="header-step-number">1</div>
+                        <div class="header-step-title">Set up new program</div>
+                    </div>
+                    <div class="header-step">
+                        <div class="header-step-number">2</div>
+                        <div class="header-step-title">Add lessons</div>
+                    </div>
+                    <div class="header-step">
+                        <div class="header-step-number">3</div>
+                        <div class="header-step-title">Upload promotional content</div>
+                    </div>
+                </div>
+                <!-- /.header-steps-mobile -->
+                <div class="content-form">
+                    <div class="content-form-caption">Let’s market your program with promotional content</div>
+                    <div class="content-form-row">
+                        <div class="content-form-info">
+                            <div class="content-form-info-title">Promotion Image</div>
+                            <div class="content-form-info-text">Upload an attention-grabbing image to promote your program.</div>
+                        </div>
+                        <!-- /.content-form-info -->
+                        <div class="content-form-block">
+                            <div class="content-form-wrapper">
+                                <label class="content-form-label">Images</label>
+                                <div class="upload-file">
+                                    <template class="upload-file-template">
+                                        <div class="upload-file-list-item upload-file-list-item-vs-image">
+                                            <a href="#" class="upload-file-list-item-remove"><!-- @import "images/close-2.svg" --></a>
+                                            <div class="upload-file-list-item-icon"><!-- @import "images/file.svg" --></div>
+                                            <div class="upload-file-list-item-name"></div>
+                                            <div class="upload-file-list-item-size"></div>
+                                        </div>
+                                    </template>
+                                    <div class="upload-file-list" data-pull-list="upload-image"></div>
+                                    <div class="upload-file-block">
+                                        <input type="file" class="upload-file-input" data-pull="upload-image" id="upload-image" name="upload-image" accept=".jpg, .jpeg, .png">
+                                        <label class="upload-file-label" for="upload-image">
+                                            <span class="upload-file-label-wrap">
+                                                <span class="upload-file-icon"><!-- @import "images/upload.svg" --></span>
+                                                <span class="upload-file-add">Add Image</span>
+                                                <span class="upload-file-info">jpg, jpeg, png maximum 25 MB</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- /.upload-file -->
+                            </div>
+                            <!-- /.content-form-wrapper -->
+                        </div>
+                        <!-- /.content-form-block -->
+                    </div>
+                    <!-- /.content-form-row -->
+                    <div class="content-form-sep"></div>
+                    <div class="content-form-row">
+                        <div class="content-form-info">
+                            <div class="content-form-info-title">Promotion Video</div>
+                            <div class="content-form-info-text">Draw the attention of customers by uploading a teaser video.</div>
+                        </div>
+                        <!-- /.content-form-info -->
+                        <div class="content-form-block">
+                            <div class="content-form-wrapper">
+                                <label class="content-form-label">Video</label>
+                                <div class="content-form-radio">
+                                    <div class="content-form-radio-item">
+                                        <div class="radio">
+                                            <input type="radio" id="video-mode-1" name="video-mode" checked>
+                                            <label for="video-mode-1">Upload</label>
+                                        </div>
+                                    </div>
+                                    <div class="content-form-radio-item">
+                                        <div class="radio">
+                                            <input type="radio" id="video-mode-2" name="video-mode">
+                                            <label for="video-mode-2">Emmbed (via link)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.content-form-radio -->
+                                <div class="upload-file">
+                                    <template class="upload-file-template">
+                                        <div class="upload-file-list-item">
+                                            <a href="#" class="upload-file-list-item-remove"><!-- @import "images/close-2.svg" --></a>
+                                            <div class="upload-file-list-item-icon"><!-- @import "images/file.svg" --></div>
+                                            <div class="upload-file-list-item-name"></div>
+                                            <div class="upload-file-list-item-size"></div>
+                                        </div>
+                                    </template>
+                                    <div class="upload-file-list" data-pull-list="upload-video"></div>
+                                    <div class="upload-file-block">
+                                        <input type="file" class="upload-file-input" data-pull="upload-video" id="upload-video" name="upload-video" accept="video/*">
+                                        <label class="upload-file-label" for="upload-video">
+                                            <span class="upload-file-label-wrap">
+                                                <span class="upload-file-icon"><!-- @import "images/upload.svg" --></span>
+                                                <span class="upload-file-add">Add Video</span>
+                                                <span class="upload-file-info">video file max 250 MB</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- /.upload-file -->
+                            </div>
+                            <!-- /.content-form-wrapper -->
+                        </div>
+                        <!-- /.content-form-block -->
+                    </div>
+                    <!-- /.content-form-row -->
+                    <div class="content-form-sep"></div>
+                    <div class="content-form-row">
+                        <div class="content-form-info">
+                            <div class="content-form-info-title">Publish Now</div>
+                            <div class="content-form-info-text">Choose if this program is available on your website.</div>
+                        </div>
+                        <!-- /.content-form-info -->
+                        <div class="content-form-block">
+                            <div class="content-form-wrapper">
+                                <label class="content-form-label">Publish?</label>
+                                <div class="content-form-radio">
+                                    <div class="content-form-radio-item">
+                                        <div class="radio">
+                                            <input type="radio" id="program-availability-public" name="program-availability" checked>
+                                            <label for="program-availability-public">Public</label>
+                                        </div>
+                                    </div>
+                                    <div class="content-form-radio-item">
+                                        <div class="radio">
+                                            <input type="radio" id="program-availability-private" name="program-availability">
+                                            <label for="program-availability-private">Private</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.content-form-radio -->
+                            </div>
+                            <!-- /.content-form-wrapper -->
+                            <div class="content-form-wrapper">
+                                <label class="content-form-label">Enable Progress Bar</label>
+                                <div class="content-form-checkbox">
+                                    <input type="checkbox" id="progress-bar" name="progress-bar" checked>
+                                    <label for="progress-bar"></label>
+                                </div>
+                                <!-- /.content-form-checkbox -->
+                            </div>
+                            <!-- /.content-form-wrapper -->
+                        </div>
+                        <!-- /.content-form-block -->
+                    </div>
+                    <!-- /.content-form-row -->
+                    <div class="content-form-sep"></div>
+                    <div class="content-form-cta">
+                        <a href="program-4.html" class="button">Save</a>
+                    </div>
+                </div>
+                <!-- /.content-form -->
+                <div class="steps-panel-push"></div>
+                <div class="steps-panel">
+                    <div class="steps-panel-item current">
+                        <div class="steps-panel-content">
+                            <div class="steps-panel-title">Add content</div>
+                            <div class="steps-panel-status">1 / 2 Completed</div>
+                        </div>
+                    </div>
+                    <!-- /.steps-panel-item -->
+                    <div class="steps-panel-item">
+                        <div class="steps-panel-content">
+                            <div class="steps-panel-title">Customize your site</div>
+                            <div class="steps-panel-status">0 / 3 Completed</div>
+                        </div>
+                    </div>
+                    <!-- /.steps-panel-item -->
+                    <div class="steps-panel-item">
+                        <div class="steps-panel-content">
+                            <div class="steps-panel-title">Package &amp; sell</div>
+                            <div class="steps-panel-status">0 / 4 Completed</div>
+                        </div>
+                    </div>
+                    <!-- /.steps-panel-item -->
+                </div>
+                <!-- /.steps-panel -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.content-site -->
+    </main>
+    <!-- /.main-site -->
+<!-- @import "parts/_foot.kit" -->
