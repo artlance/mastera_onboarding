@@ -554,6 +554,8 @@
             svg {
                 display: block;
                 margin: 0;
+                width: 100%;
+                height: auto;
             }
         }
     }
@@ -908,6 +910,7 @@
         display: block;
         margin-bottom: 1.8rem;
         img {
+            width: 8.1rem;
             margin: 0 auto;
         }
     }
@@ -1103,6 +1106,8 @@
             svg {
                 display: block;
                 margin: 0;
+                width: 2.4rem;
+                height: 2.4rem;
                 path {
                     transition: stroke $d $f;
                 }
@@ -1356,6 +1361,8 @@
                 svg {
                     display: block;
                     margin: 0 auto;
+                    width: 100%;
+                    height: auto;
                     path {
                         transition: fill $d $f;
                     }
@@ -1404,6 +1411,8 @@
             svg {
                 display: block;
                 margin: 0 auto;
+                width: 100%;
+                height: auto;
                 path {
                     transition: stroke $d $f;
                 }
@@ -1423,6 +1432,8 @@
             svg {
                 display: block;
                 margin: 0 auto;
+                width: 100%;
+                height: auto;
                 path {
                     transition: fill $d $f;
                 }
@@ -1799,9 +1810,14 @@
             &-icon {
                 flex: 0 0 2.4rem;
                 max-width: 2.4rem;
+                height: 2.4rem;
                 svg {
                     display: block;
                     margin: 0 auto;
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
                     path {
                         transition: fill $d $f;
                     }
@@ -1969,6 +1985,8 @@
                 svg {
                     display: block;
                     margin: 0 auto;
+                    width: 100%;
+                    height: auto;
                     path {
                         transition: stroke $d $f;
                     }
@@ -2044,6 +2062,8 @@
                 svg {
                     display: block;
                     margin: 0;
+                    width: 100%;
+                    height: auto;
                     path {
                         transition: stroke $d $f;
                     }
@@ -2375,6 +2395,8 @@
         svg {
             display: block;
             margin: 0;
+            width: 100%;
+            height: auto;
             path {
                 transition: fill $d $f;
             }
@@ -2392,6 +2414,8 @@
         svg {
             display: block;
             margin: 0;
+            width: 100%;
+            height: auto;
             path {
                 transition: stroke $d $f;
             }
@@ -2567,6 +2591,8 @@
                 svg {
                     display: block;
                     margin: 0 auto;
+                    width: 2.5rem;
+                    height: auto;
                 }
             }
         }
@@ -2597,6 +2623,8 @@
             svg {
                 display: block;
                 margin: 0 auto;
+                width: 100%;
+                height: auto;
                 path {
                     transition: fill $d $f;
                 }
@@ -2654,6 +2682,8 @@
             svg {
                 display: block;
                 margin: 0;
+                width: 100%;
+                height: auto;
                 path {
                     transition: fill $d $f;
                 }
@@ -2671,6 +2701,8 @@
             svg {
                 display: block;
                 margin: 0;
+                width: 100%;
+                height: auto;
                 path {
                     transition: stroke $d $f;
                 }

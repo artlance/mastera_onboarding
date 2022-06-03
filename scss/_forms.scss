@@ -297,6 +297,8 @@ body>.ui-widget {
         svg {
             display: block;
             margin: 0 auto;
+            width: 100%;
+            height: auto;
             path {
                 transition: fill $d $f;
             }
@@ -527,6 +529,8 @@ body>.ui-widget {
                 svg {
                     display: block;
                     margin: 0 auto;
+                    width: 1rem;
+                    height: auto;
                     path {
                         stroke: var(--white);
                     }
@@ -542,6 +546,8 @@ body>.ui-widget {
                 svg {
                     display: block;
                     margin: 0 auto;
+                    width: 2.5rem;
+                    height: auto;
                 }
             }
             &-name {
@@ -605,6 +611,8 @@ body>.ui-widget {
         svg {
             display: block;
             margin: 0 auto;
+            width: 4rem;
+            height: 4rem;
         }
     }
     &-add {
