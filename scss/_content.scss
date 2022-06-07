@@ -2314,7 +2314,6 @@
         }
     }
     &-list {
-        margin-bottom: 2.4rem;
         background: var(--white);
         table {
             width: 100%;
@@ -2597,9 +2596,7 @@
             }
         }
     }
-    &-list {
-        margin-bottom: 3.3rem;
-    }
+    &-list {}
     &-item {
         display: flex;
         align-items: center;
