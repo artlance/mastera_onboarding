@@ -281,4 +281,13 @@ $(document).ready(function () {
 
     //------------------------------------------------------------------------//
 
+    //homepage customize section
+    $('.homepage-customize-section-list').sortable({
+        connectWith: ".homepage-customize-section",
+        handle: ".homepage-customize-section-drag",
+        placeholder: "homepage-customize-section-placeholder"
+    });
+
+    //------------------------------------------------------------------------//
+
 });//document ready
